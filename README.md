@@ -31,7 +31,7 @@
 Необходимо установить и запустить [MongoDB](https://www.mongodb.org/), создать базу с именем test
 
 ```sh
-$ git clone  nodeserver
+$ git clone https://github.com/andrIvash/node-template.git nodeserver
 $ cd nodeserver
 $ npm i 
 
