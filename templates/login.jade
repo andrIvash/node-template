@@ -1,0 +1,17 @@
+extends layouts/main_layout
+
+block content
+  .error
+  h1.login__title!= message
+  form(id="loginForm")
+    .block
+      input(type="text" id="name" name="name" class="input")
+      label(for="name" class="label") Name
+    .block
+      input(type="password" id="password" name="password" class="input")
+      label(for="password" class="label") Password
+    .block
+      input(type="submit" value="Submit" class="btn")
+      input(type="reset" value="Clear" class="btn")
+    
+  ul.list

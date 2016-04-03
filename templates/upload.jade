@@ -1,0 +1,19 @@
+extends layouts/main_layout
+
+block content
+  h1!= message
+  form(id="form" )
+    .block
+      input(type="text" id="title" name="title" class="input")
+      label(for="title" class="label") Input title
+    .block
+      input(type="text" id="body" name="body" class="input")
+      label(for="body" class="label") Input text
+    .block
+      input(type="file" id="photo" name="photo" class="input")
+      label(for="photo" class="label") Add screenshot  
+    .block
+      input(type="submit" value="Submit" class="btn")
+      input(type="reset" value="Clear" class="btn")
+    .block
+      button.button kill base

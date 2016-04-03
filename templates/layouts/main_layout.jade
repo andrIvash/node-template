@@ -1,0 +1,17 @@
+doctype html
+html(lang="ru-RU")
+  include ../blocks/head.jade
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Your are using <strong>old version</strong> of the browser. Please, <a href="http://browsehappy.com/">update</a> it.</p>
+    <![endif]-->
+    .wrapper
+      //- Шапка
+      //-+header
+      .wrapper-inner
+        .main-content
+          .container  
+            block content
+    //- +footer
+    script(src="https://code.jquery.com/jquery-2.2.2.min.js")
+    script(src="js/main.js")

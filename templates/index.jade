@@ -1,0 +1,22 @@
+extends layouts/main_layout
+//- в зависимости от авторизации генерация отображения
+block content
+  .header
+    - if (user)
+      span.name Hello #{user.username}
+      a.logout-link(href="logout") Logout
+      a.add-link(href="upload") Add Project
+    - else
+      span.name Hello Unknown User
+      a.main-link(href="login") Login
+  h1!= message
+  - if (notes)  
+    ul.list
+      each val in notes
+        li
+          div= val.title
+          div= val.body
+          div.img-wrapper
+            img(src='uploads/' +  val.filename class="img")
+
+
